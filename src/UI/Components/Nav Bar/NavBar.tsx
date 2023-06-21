@@ -38,6 +38,13 @@ const NavBar: React.FC = () => {
     borderBottom: process.env.REACT_APP_STAGE === "production" ? "unset" : "1pt solid #ff0000"
   }
 
+  const host = () => {
+    let host = window.location.host
+    let components = host.split(".")
+    components.shift()
+    return components
+  }
+
   return (
     <div>
       <AppBar
@@ -68,7 +75,7 @@ const NavBar: React.FC = () => {
               variant="outlined"
               size="large"
               color="navbarText"
-              href={`https://app.${window.location.host}`}
+              href={`https://app.${host}`}
               sx={buttonStyle}>
               Open App
             </Button>
