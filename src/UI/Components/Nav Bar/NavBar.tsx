@@ -42,6 +42,7 @@ const NavBar: React.FC = () => {
     let host = window.location.host
     let components = host.split(".")
     components.shift()
+    console.log(host)
     return components
   }
 
@@ -75,7 +76,7 @@ const NavBar: React.FC = () => {
               variant="outlined"
               size="large"
               color="navbarText"
-              href={`https://app.${host}`}
+              href={`https://app.${host()}`}
               sx={buttonStyle}>
               Open App
             </Button>
