@@ -42,8 +42,7 @@ const NavBar: React.FC = () => {
     let host = window.location.host
     let components = host.split(".")
     components.shift()
-    console.log(host)
-    return components
+    return components.join(".")
   }
 
   return (
