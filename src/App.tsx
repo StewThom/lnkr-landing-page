@@ -1,5 +1,5 @@
 import { Box, CssBaseline } from '@mui/material'
-import NavBar from './UI/Components/Footer/Nav Bar/NavBar'
+import NavBar from './UI/Components/Nav Bar/NavBar'
 import ThemeProvider from './Theme/ThemeProvider'
 import { Suspense, useLayoutEffect, useRef, useState } from 'react'
 import { Route, Routes } from 'react-router'
@@ -7,7 +7,7 @@ import Home from './UI/Pages/Home'
 import DocumentViewer from './UI/Pages/DocumentViewer'
 import { IubendaDocument } from './Services/IubendaService'
 import Footer from './UI/Components/Footer/Footer'
-import ScrollToTop from './UI/ScrollToTop'
+import ScrollToTop from './UI/Components/ScrollToTop'
 
 function App() {
 
