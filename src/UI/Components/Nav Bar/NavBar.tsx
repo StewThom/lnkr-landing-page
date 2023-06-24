@@ -3,6 +3,8 @@ import React from "react"
 import { useTheme } from "@emotion/react"
 import { Link } from "react-router-dom"
 
+import OpenIcon from "@mui/icons-material/OpenInNew"
+
 declare module "@mui/material/AppBar" {
   interface AppBarPropsColorOverrides {
     navbar: true
@@ -72,9 +74,9 @@ const NavBar: React.FC = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Button
               disableRipple
-              variant="outlined"
               size="large"
               color="navbarText"
+              endIcon={<OpenIcon />}
               href={`https://app.${host()}`}
               sx={buttonStyle}>
               Open App
