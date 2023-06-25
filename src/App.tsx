@@ -25,7 +25,7 @@ function App() {
       <CssBaseline />
       <Box sx={{ display: "flex", flexDirection: "column" , minHeight: "100vh", alignItems: "stretch" }}>
         <NavBar />
-        <Box sx={{ margin: { mobile: "12pt 0pt 24pt 0pt", tablet: "24pt auto" }, width: { mobile: "100%", tablet: "70%" } }} flex={1}>
+        <Box sx={{ margin: { mobile: "12pt 0pt 24pt 0pt", tablet: "24pt auto" }, width: { mobile: "100%", tablet: "100%" } }} flex={1}>
           <Box sx={{ height: (theme) => theme.mixins.toolbar }}></Box>
             <Suspense fallback={null}>
               <ScrollToTop>
