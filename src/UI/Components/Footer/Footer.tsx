@@ -1,5 +1,5 @@
 import { ButtonBase, Divider, Grid, Stack, Typography } from "@mui/material"
-import React, { useRef } from "react"
+import React from "react"
 import { Link } from "react-router-dom"
 
 const Footer = React.forwardRef((_props, ref) => {
