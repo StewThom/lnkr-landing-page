@@ -1,9 +1,10 @@
-import { AppBar, Button, Toolbar, Box } from "@mui/material"
+import { AppBar, Button, Toolbar, Box, Icon } from "@mui/material"
 import React from "react"
 import { useTheme } from "@emotion/react"
 import { Link } from "react-router-dom"
 
 import OpenIcon from "@mui/icons-material/OpenInNew"
+import AppIcon from "../../../Resources/Icons/Icon/icon.png"
 
 declare module "@mui/material/AppBar" {
   interface AppBarPropsColorOverrides {
@@ -67,7 +68,8 @@ const NavBar: React.FC = () => {
               color="navbarText"
               component={Link}
               to="/"
-              sx={buttonStyle}>
+              sx={buttonStyle}
+              startIcon={<img src={AppIcon} height={20} width={20} />}>
               LNKR
             </Button>
           </Box>
